@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+​
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middleware exercice</title>
+    <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+​
+
+<body class="stackedit">
+    <div class="stackedit__html">
+        <p>Créer un simple projet avec des utilisateurs et des roles, des articles</p>
+        <h2 id="roles-">Roles :</h2>
+        <p>Admin<br>
+            Rédacteur<br>
+            Lecteur<br>
+            Utilisateur</p>
+        <h2 id="utilisateurs-">Utilisateurs :</h2>
+        <ul>
+            <li>Utiliser le système auth de laravel</li>
+            <li>Chaque utilisateurs qui s’inscrit est un simple <strong>Utilisateur</strong></li>
+            <li>Pour devenir Lecteur il faut être inscrit et cela nous donne accès a un input bouton sur le quel
+                cliquer, quand on clique dessus, dans l’administration dans une page <strong>Lecteur Request</strong>
+                L’émail de l’utilisateur apparaît et c’est a l’administrateur de valider le passage de
+                <strong>l’utilisateur</strong> au role <strong>Lecteur</strong>, quand on est lecteur on voit toujours
+                ce bouton mais son utilité est différente.</li>
+            <li>Pour devenir Rédacteur il faut d’abord être Lecteur et quand on appui sur ce bouton alors qu’on est
+                lecteur, notre demande est affiché dans la page “Rédacteur Request”</li>
+        </ul>
+        <h2 id="article-dans-le-site-">Article dans le site :</h2>
+        <p>Il faut avoir le role Lecteur minimum pour pouvoir lire un article, quand on clique sur un article alors
+            qu’on est que simple utilisateur on reçoit un message nous disant que notre rôle ne nous le permet pas en
+            nous ayant redirigé la ou on était avant le clique.</p>
+        <ul>
+            <li>Il est possible de s’abonner a un article en cliquant sur un bouton dans l’article</li>
+        </ul>
+        <h2 id="article-dans-le-backoffice-">Article Dans le backoffice :</h2>
+        <ul>
+            <li>Un article comporte un titre un texte et une image ainsi qu’un Rédacture</li>
+            <li>Pour accéder a la page créer un article il faut être Rédacteur ou Admin</li>
+            <li>Seuls les Admin et rédacteurs peuvent acceder a cette page</li>
+            <li>Les rédacteurs ne peuvent editer un article que si ils en sont le propriétaire</li>
+        </ul>
+        <p>Récap de la présentation du site internet :</p>
+        <ul>
+            <li>Il y a deux parties , le site et le backoffice(là ou on gère le contenu du site)</li>
+            <li>Dans le site on a une page Accueil avec une section “Les derniers articles”
+                <ul>
+                    <li>Dans cette section on y trouve les 5 derniers articles avec juste le titre et un bouton
+                        <strong>lire plus</strong></li>
+                    <li>lire plus ne fonctionne que si on a le role Lecteur,Rédacteur ou Admin</li>
+                </ul>
+            </li>
+            <li>Une section Abonnement !
+                <ul>
+                    <li>avec un bouton <strong>Devenir Lecteur</strong>( dans le cas ou on est connecté et simple
+                        Utilisateur )</li>
+                    <li>avec un bouton <strong>Devenir Rédacteur</strong>( dans le cas ou on est connecté et qu’on est
+                        Lecteur )</li>
+                    <li>Cette section contient la liste des articles aux quels on est abonnés.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+​
+
+</html>
+
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, quibusdam unde commodi autem eius iste, laborum, temporibus vero veritatis ducimus reprehenderit! Sequi consequatur, aperiam fuga amet qui dolore? Harum, molestias?
+Ullam minus corporis itaque neque temporibus, sit repellat nihil consequatur debitis ad vitae beatae accusantium voluptatem aspernatur maiores ipsam iste. Sapiente consequatur sit eum nesciunt excepturi reiciendis, laboriosam accusantium earum!
+Debitis veniam dolore, quod inventore minus sint! Provident temporibus, nam atque excepturi expedita consequuntur, doloremque a neque quam architecto ad velit molestias quisquam. Odio optio molestias adipisci similique quia eligendi.
+Accusantium, sed odio aut sunt voluptatibus labore vel sapiente eveniet? Harum numquam molestias iste obcaecati sint nobis facere, fugiat aliquam officiis mollitia illum fugit necessitatibus. Mollitia voluptates esse officia quam!
